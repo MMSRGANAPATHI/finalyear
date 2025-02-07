@@ -1,5 +1,0 @@
-[phases.setup]
-nixPkgs = ["python310", "mariadb-connector-c", "pkg-config"]
-
-[phases.build]
-cmds = ["export MYSQLCLIENT_CFLAGS=-I/nix/store/.../include/mysql", "export MYSQLCLIENT_LDFLAGS=-L/nix/store/.../lib"]
