@@ -1,5 +1,4 @@
 [phases.setup]
-nixPkgs = ["python310", "mariadb", "pkg-config"]
-
+nixPkgs = ["python310", "mariadb", "mariadb-connector-c", "pkg-config"]
 [phases.build]
 cmds = ["python3 -m venv /opt/venv && . /opt/venv/bin/activate && pip install -r requirements.txt"]
